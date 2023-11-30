@@ -1,4 +1,4 @@
-/* SELECT DISTINCT game
+SELECT DISTINCT game
 FROM stream;
 
 SELECT DISTINCT channel
@@ -40,7 +40,7 @@ COUNT(*)
 FROM stream
 WHERE country = 'US'
 GROUP BY 1; --When do American viewers watch?
-*/
+
 SELECT * FROM stream
 JOIN chat
 ON stream.device_id = chat.device_id; --This combines the two tables.
