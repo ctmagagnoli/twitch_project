@@ -45,3 +45,5 @@ SELECT * FROM stream
 JOIN chat
 ON stream.device_id = chat.device_id; --This combines the two tables.
 
+--Next step: We have the tables linked, time to play with the data to find interesting trends
+
