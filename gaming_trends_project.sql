@@ -1,3 +1,10 @@
+/*
+NAME:
+    Twitch Gaming Trends
+    
+PURPOSE:
+    Analyzes Twitch data (downloadable from Codecademy's Github at :https://github.com/Codecademy-Curriculum/Codecademy-Learn-SQL-from-Scratch/tree/master/Twitch) to look for trends, which can then be plotted elsewhere.
+*/
 SELECT DISTINCT game
 FROM stream;
 
@@ -44,6 +51,4 @@ GROUP BY 1; --When do American viewers watch?
 SELECT * FROM stream
 JOIN chat
 ON stream.device_id = chat.device_id; --This combines the two tables.
-
---Next step: We have the tables linked, time to play with the data to find interesting trends
 
